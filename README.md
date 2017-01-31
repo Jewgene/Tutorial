@@ -21,7 +21,7 @@ exactly identical. Not only are the equal to each other, they are literally the 
 something about **apple**, **otherApple** would change as well. The converse is also true.
 
 ![alt text](https://github.com/Jewgene/Tutorial/blob/master/Example2.png)
-![alt text](https://github.com/Jewgene/Tutorial/blob/master/Output1.png)
+![alt text](https://github.com/Jewgene/Tutorial/blob/master/Output2.png)
 
 If I run the above code, **otherApple** will have a red value of 0, despite me never changing it explicitly. This is because in Java,
 and many other languages if I use the "=" operator to set an object equal to another one, what I am really doing is creating a **reference**
@@ -35,6 +35,7 @@ at the Fruit class, notice the first constructor I created.
 It looks a bit strange to see that I have a constructor for Fruit which takes another Fruit as an argument, but it makes a lot more sense that it seems initially. I use the "this.x" syntax to change this specific instance of the variable, meaning i'm only changing the value of it. For example "this.color = color" basically translates to "change this object's value of color to that value of color." If I change on of the objects now, the other will remain unchanged.
 
 ![alt text](https://github.com/Jewgene/Tutorial/blob/master/Example3.png)
+![alt text](https://github.com/Jewgene/Tutorial/blob/master/Output4.png)
 
 As you can see here, I declare **anotherApple** by using the cloning constructor from earlier. Running this code will show that even though I set **apple** to have a value of 100 for blue, the value of **anotherApple** is the same as it was before the change. This method for copying objects is called **copying by value**. Instead of copying objects by creating a reference, this method creates a "blank" object and then sets all the value you want to copy equal to the original's corresponding values.
 
